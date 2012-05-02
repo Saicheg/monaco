@@ -1,0 +1,188 @@
+<HTML>
+<HEAD>
+<link rel="shortcut icon" href="http://www.monacomotelwildwood.com/images/favicon.ico" />
+<style>
+  #slide-container {
+     text-align:center;
+     margin:0px 0px;
+  }
+  #slide-container #slideshow {
+     width:610;
+     height:216px;
+     margin:auto;
+     position:relative;
+  }
+  #slide-container #slideshow IMG {
+     position:absolute;
+     top:0;
+     left:0;
+  }
+</style>
+
+<script>
+    function animate(tagId, alfa, step) {
+        div = document.getElementById(tagId);
+        var items = new Array();
+        for (c = i = 0; i < div.childNodes.length; i++) {
+            if (div.childNodes[i].tagName == "IMG") {
+                items[c] = div.childNodes[i];
+                c++;
+            }
+        }
+        last = items[items.length - 1];
+        next = items[items.length - 2];
+        last.style.opacity = alfa / 100;
+        last.style.filter = "progid:DXImageTransform.Microsoft.Alpha(opacity=" + alfa + ")";
+        last.style.filter = "alpha(opacity=" + alfa + ")";
+
+        if ((alfa - step) > 0) {
+            setTimeout("animate('" + tagId + "'," + (alfa - step) + "," + step + ");", 50);
+        } else {
+            next.style.opacity = 1;
+            next.style.filter = "progid:DXImageTransform.Microsoft.Alpha(opacity=100)";
+            next.style.filter = "alpha(opacity=100)";
+            tmp = last;
+            div.removeChild(last);
+            div.insertBefore(tmp, items[0]);
+            tmp.style.opacity = 1;
+            tmp.style.filter = "progid:DXImageTransform.Microsoft.Alpha(opacity=100)";
+            tmp.style.filter = "alpha(opacity=100)";
+
+<!-- to change seconds-->
+            setTimeout("slideSwitch('" + tagId + "',1000)", 4000);
+<!-- to change seconds -->
+        }
+    }
+    function slideSwitch(tagId, speed) {
+        div = document.getElementById('slideshow');
+        if (div.style.visibility != "visible") {
+            div.style.visibility = "visible";
+        }
+        items = div.getElementsByTagName('img');
+        if (items.length > 0) {
+            animate(tagId, 100, 10);
+        }
+    }
+    setTimeout("slideSwitch('slideshow',1000);", 2000);
+</script>
+<TITLE>Monaco Motel - Wildwood, NJ Motel Near Beach, Boardwalk and Convention Center</TITLE> 
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> <script language="JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script> <STYLE TYPE="text/css">
+
+<!--
+.bodytext {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; line-height: 12pt}
+-->
+</STYLE> <META NAME="keywords" CONTENT="Wildwood Motel, Near Boardwalk, Wildwood NJ, Morey's Piers, Near Convention Center, Ocean Ave, Wildwood Hotel, Motels, Jersey Shore, Doo Wop Motel, Coupons, Reservations, Monaco"> 
+<META NAME="keywords" CONTENT="wildwood nj motel, motel near boardwalk, wildwood nj, hotel, motel, convention center, beach, jersey shore, affordable, coupons, discounts, doo wop, festivals, doo wop motel">
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18924105-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+</HEAD>
+
+<BODY BGCOLOR="#D582F7" BACKGROUND="images/bg_dia1.gif" TOPMARGIN="0" MARGINHEIGHT="0" ONLOAD="MM_preloadImages('images/nav/about_over.gif','images/nav/rooms_over.gif','images/nav/photo_over.gif','images/nav/amenities_over.gif','images/nav/specials_over.gif','images/nav/attractions_over.gif','images/nav/location_over.gif','images/nav/reservations_over.gif')" LINK="0078FF">
+<TABLE WIDTH="960" BORDER="0" CELLSPACING="0" CELLPADDING="0" ALIGN="CENTER" BGCOLOR="E0C1FB"><TR><TD><TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" ALIGN="CENTER"><TR><TD><TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD><IMG SRC="images/top_left_corner.gif" WIDTH="30" HEIGHT="61"></TD><TD><IMG SRC="images/palms_anim.gif" WIDTH="290" HEIGHT="61"></TD><TD><IMG SRC="images/top_crown.gif" WIDTH="310" HEIGHT="61"></TD><TD><A HREF="reservations.html"><IMG SRC="images/top_reservations_anim3.gif" WIDTH="300" HEIGHT="61" BORDER="0" ALT="Wildwood NJ Reservations"></A></TD><TD><IMG SRC="images/top_right_corner.gif" WIDTH="30" HEIGHT="61"></TD></TR></TABLE></TD></TR><TR><TD><TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="30"><IMG SRC="images/top_left.gif" WIDTH="30" HEIGHT="117"></TD><TD><A HREF="http://www.doowopusa.org" TARGET="_blank"><IMG SRC="images/top_doowop.gif" WIDTH="290" HEIGHT="117" BORDER="0" ALT="Certified Doo Wop Property"></A></TD><TD><A HREF="index.html"><IMG SRC="images/top_logo.gif" WIDTH="310" HEIGHT="117" ALT="Monaco Motel, Wildwood NJ" BORDER="0"></A></TD><TD><IMG SRC="images/top_address.gif" WIDTH="300" HEIGHT="117" ALT="4211 Ocean Ave, Wildwood, NJ 08260, 609-522-2269"></TD><TD WIDTH="30"><IMG SRC="images/top_right.gif" WIDTH="30" HEIGHT="117"></TD></TR></TABLE></TD></TR><TR><TD><TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="30" BACKGROUND="images/left_bg.gif">&nbsp;</TD><TD><TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="290"><TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD><A HREF="aboutus.html" ONMOUSEOUT="MM_swapImgRestore()" ONMOUSEOVER="MM_swapImage('Image16','','images/nav/about_over.gif',1)"><IMG NAME="Image16" BORDER="0" SRC="images/nav/about.gif" WIDTH="290" HEIGHT="30" ALT="About the Monaco Motel, WIldwood, NJ"></A></TD></TR>
+<TR><TD><A HREF="rates.html" ONMOUSEOUT="MM_swapImgRestore()" ONMOUSEOVER="MM_swapImage('Image17','','images/nav/rooms_over.gif',1)"><IMG NAME="Image17" BORDER="0" SRC="images/nav/rooms.gif" WIDTH="290" HEIGHT="31" ALT="Room Rates at the Monaco Motel in Wildwood, NJ"></A></TD></TR>
+<TR><TD><A HREF="photo.html" ONMOUSEOUT="MM_swapImgRestore()" ONMOUSEOVER="MM_swapImage('Image35','','images/nav/photo_over.gif',1)"><IMG NAME="Image35" BORDER="0" SRC="images/nav/photo.gif" WIDTH="290" HEIGHT="31" ALT="Photo gallery at the Monaco Motel in Wildwood, NJ"></A></TD></TR>
+<TR><TD><A HREF="amenities.html" ONMOUSEOUT="MM_swapImgRestore()" ONMOUSEOVER="MM_swapImage('Image18','','images/nav/amenities_over.gif',1)"><IMG NAME="Image18" BORDER="0" SRC="images/nav/amenities.gif" WIDTH="290" HEIGHT="31" ALT="Amenities at the Monaco Motel in Wildwood, NJ"></A></TD></TR><TR><TD><A HREF="specials.html" ONMOUSEOUT="MM_swapImgRestore()" ONMOUSEOVER="MM_swapImage('Image19','','images/nav/specials_over.gif',1)"><IMG NAME="Image19" BORDER="0" SRC="images/nav/specials.gif" WIDTH="290" HEIGHT="31" ALT="Specials at the Monaco Motel in Wildwood, NJ"></A></TD></TR><TR><TD><A HREF="attractions.html" ONMOUSEOUT="MM_swapImgRestore()" ONMOUSEOVER="MM_swapImage('Image20','','images/nav/attractions_over.gif',1)"><IMG NAME="Image20" BORDER="0" SRC="images/nav/attractions.gif" WIDTH="290" HEIGHT="31" ALT="Wildwood NJ Attractions"></A></TD></TR><TR><TD><A HREF="directions.html" ONMOUSEOUT="MM_swapImgRestore()" ONMOUSEOVER="MM_swapImage('Image21','','images/nav/location_over.gif',1)"><IMG NAME="Image21" BORDER="0" SRC="images/nav/location.gif" WIDTH="290" HEIGHT="31" ALT="Directions to the Monaco Motel in Wildwood, NJ"></A></TD></TR><TR><TD><A HREF="reservations.html" ONMOUSEOUT="MM_swapImgRestore()" ONMOUSEOVER="MM_swapImage('Image22','','images/nav/reservations_over.gif',1)"><IMG NAME="Image22" BORDER="0" SRC="images/nav/reservations.gif" WIDTH="290" HEIGHT="31" ALT="Make a Reservation at the Monaco Motel in Wildwood, NJ"></A></TD></TR></TABLE></TD>
+<TD>
+<div id="slide-container">
+ <div id="slideshow">
+<!-- to change pictures-->
+  <img src="flash/monaco1.jpg"/>
+  <img src="flash/convcenter1.jpg"/>
+  <img src="flash/monaconeon.jpg"/>
+  <img src="flash/room1.jpg"/>
+  <img src="flash/beach1.jpg"/>
+  <img src="flash/deck1.jpg"/>
+  <img src="flash/mm_ne_610.jpg"/>
+  <img src="flash/sign.jpg"/>
+<!-- to change pictures-->
+ </div>
+</div>
+</TD></TR></TABLE></TD><TD WIDTH="30" BACKGROUND="images/right_bg.gif">&nbsp;</TD></TR></TABLE></TD></TR><TR><TD><TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="30" BACKGROUND="images/left_bg.gif">&nbsp;</TD><TD COLSPAN="2" BGCOLOR="A547EA"><TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="290"><TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD>&nbsp;</TD></TR><TR><TD><DIV ALIGN="CENTER"><A HREF="coupons.html"><IMG SRC="misc/vacation_coupons.gif" WIDTH="240" HEIGHT="98" BORDER="0" ALT="Vacation Coupons"></A></DIV></TD></TR>
+<TR>
+    <TD>
+        <DIV ALIGN="CENTER"><A HREF="clubmonaco.html"><IMG SRC="misc/club_monaco.gif" WIDTH="240" HEIGHT="95" BORDER="0" ALT="Club Monaco - Special Offers for Repeat Guests!"></A>
+        </DIV>
+     </TD>
+</TR>
+<!-- Tripadvisor block -->
+<TR><TD>&nbsp;</TD></TR>
+<tr>
+    <td>
+        <table align="center" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+         <tr>
+            <td height="67px" width="150px" style="background-image:url('images/trip_top.gif');">
+            </td>
+         </tr>
+         <tr>
+            <td height="20px" width="150px" style="background-image:url('images/trip_bot_3.gif'); background-position: bottom; background-repeat:no-repeat;" valign="top" align="center">
+                <div style="margin-bottom:2px;">
+                    <a href="http://www.tripadvisor.com/Hotel_Review-g46931-d639148-Reviews-Monaco_Motel-Wildwood_New_Jersey.html" style="font-size:11pt; font-weight:bold; color:Black;"> <img src="images/corona.gif" border="0"/> Monaco Motel  <img src="images/corona.gif" border="0"/></a>
+                </div>
+            </td>
+         </tr>
+        </table>
+    </td>
+</tr>
+<!-- Tripadvisor block -->
+<!--Blogspot block -->
+<tr>
+    <td align="center">
+        <a href="http://www.monacomotel.blogspot.com"><img src="images/blogger.png" height="113px" width="150px" border="0"/></a>
+    </td>
+</tr>
+<!--Blogspot block -->
+<TR><TD>&nbsp;</TD></TR></TABLE>
+</TD><TD VALIGN="TOP"><TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD>&nbsp;</TD></TR><TR><TD><TABLE WIDTH="570" BORDER="0" CELLSPACING="0" CELLPADDING="0" ALIGN="CENTER"><TR><TD><IMG SRC="images/rbox_white_top_left.gif" WIDTH="15" HEIGHT="12"></TD><TD WIDTH="540" BGCOLOR="#FFFFFF"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="5"></TD><TD><IMG SRC="images/rbox_white_top_right.gif" WIDTH="15" HEIGHT="12"></TD></TR><TR><TD BGCOLOR="#FFFFFF">&nbsp;</TD><TD BGCOLOR="#FFFFFF"><TABLE WIDTH="100%" BORDER="0" CELLSPACING="3" CELLPADDING="3" CLASS="bodytext"><TR>
+  <TD><B><FONT COLOR="5CCAEF">Welcome 
+to Wildwood's Monaco Motel, with our Convenient Beach Block Location!</FONT></B><BR><BR>The Monaco Motel is just steps from 
+Wildwood's Famous <A HREF="attractions.html">Beach and Boardwalk</A>. Only one 
+block to the <A HREF="http://www.wildwoodsnj.com">Wildwood Convention Center</A>, 
+<A HREF="http://www.doowopusa.org/museum/index.html">Doo Wop Museum</A>, and the 
+new home of the <A HREF="http://www.capemaycountyherald.com/article/56419-vietnam+memorial+wall+groundbreaking+planned+wildwood" TARGET="_blank">Vietnam 
+Memorial</A>. Conveniently located on Ocean Avenue. Close to restaurants, shopping, 
+amusement piers &amp; water parks. Minutes to tennis courts and bike rentals. 
+Ideal for Family Vacations, Romantic Getaways, <A HREF="specials.html">Special 
+Event Weekends &amp; Festivals</A>...</TD></TR></TABLE></TD><TD BGCOLOR="#FFFFFF">&nbsp;</TD></TR><TR><TD><IMG SRC="images/rbox_white_bottom_left.gif" WIDTH="15" HEIGHT="12"></TD><TD BGCOLOR="#FFFFFF"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="5"></TD><TD><IMG SRC="images/rbox_white_bottom_right.gif" WIDTH="15" HEIGHT="12"></TD></TR></TABLE></TD></TR><TR><TD>&nbsp;</TD></TR><TR><TD><DIV ALIGN="CENTER" CLASS="bodytext"><B><FONT COLOR="#5CCAEF">Links 
+of Interest:</FONT></B><BR><A HREF="http://www.doowopusa.org"><FONT COLOR="#FFFFFF">Wildwoods 
+Doo Wop Preservation League</FONT></A> &nbsp;|&nbsp; <A HREF="http://www.moreyspiers.com"><FONT COLOR="#FFFFFF">Morey's 
+Piers</FONT></A> &nbsp;|&nbsp; <A HREF="http://www.mypostcards.com"><FONT COLOR="#FFFFFF">MyPostcards.com</FONT></A></DIV></TD></TR></TABLE></TD></TR></TABLE></TD><TD WIDTH="30" BACKGROUND="images/right_bg.gif">&nbsp;</TD></TR></TABLE></TD></TR><TR><TD><TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="30" BACKGROUND="images/left_bg.gif">&nbsp;</TD><TD COLSPAN="2" BGCOLOR="FFF573" HEIGHT="76"><TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" ALIGN="CENTER" CLASS="bodytext"><TR><TD WIDTH="200"><DIV ALIGN="CENTER"><A HREF="contactus.html"><B>Contact 
+Us</B></A>&nbsp; |&nbsp; <A HREF="policies.html"><B>Policies</B></A><A HREF="directions.html"></A></DIV></TD><TD><DIV ALIGN="CENTER"><A HREF="specials.html"><IMG SRC="banners/2010_specials.gif" WIDTH="400" HEIGHT="40" BORDER="0" ALT="2012 Specials at the Monaco Motel"></A></DIV></TD><TD WIDTH="200"><DIV ALIGN="CENTER"><A HREF="http://www.wildwoods.org" TARGET="_blank"><IMG SRC="misc/logo_gwhma.gif" WIDTH="101" HEIGHT="76" BORDER="0" ALT="Greater Wildwood Hotel &amp; Motel Association"></A> 
+<A HREF="http://www.moreyspiers.com" TARGET="_blank"><IMG SRC="misc/logo_moreys.gif" WIDTH="82" HEIGHT="76" BORDER="0" ALT="Morey's Piers Wildwood, NJ"></A> 
+</DIV></TD></TR></TABLE></TD><TD WIDTH="30" BACKGROUND="images/right_bg.gif">&nbsp;</TD></TR></TABLE></TD></TR><TR><TD><TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD><IMG SRC="images/bottom_left_corner.gif" WIDTH="30" HEIGHT="26"></TD><TD COLSPAN="3"><IMG SRC="images/bottom_line.gif" WIDTH="900" HEIGHT="26"></TD><TD><IMG SRC="images/bottom_right_corner.gif" WIDTH="30" HEIGHT="26"></TD></TR></TABLE></TD></TR></TABLE></TD></TR></TABLE> 
+</BODY>
+</HTML>
