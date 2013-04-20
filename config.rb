@@ -18,15 +18,15 @@
 # Per-page layout changes:
 #
 # With no layout
-# page "/path/to/file.html", :layout => false
+page "/index.html.erb", :layout => false
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
 #
 # A path which all have the same layout
-with_layout :layout do
-  page "*"
-end
+# with_layout :layout do
+#   page "*"
+# end
 
 # Proxy (fake) files
 # page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
