@@ -35,12 +35,14 @@ function animate(tagId, alfa, step) {
 }
 function slideSwitch(tagId, speed) {
     div = document.getElementById('slideshow');
-    if (div.style.visibility != "visible") {
-        div.style.visibility = "visible";
-    }
-    items = div.getElementsByTagName('img');
-    if (items.length > 0) {
-        animate(tagId, 100, 10);
+    if(div != null) {
+      if (div.style.visibility != "visible") {
+          div.style.visibility = "visible";
+      }
+      items = div.getElementsByTagName('img');
+      if (items.length > 0) {
+          animate(tagId, 100, 10);
+      }
     }
 }
 setTimeout("slideSwitch('slideshow',1000);", 2000);
@@ -48,6 +50,10 @@ setTimeout("slideSwitch('slideshow',1000);", 2000);
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-18924105-1']);
 _gaq.push(['_trackPageview']);
+
+$(function(){
+  $('#gallery a').lightBox();
+}());
 
 (function () {
     var ga = document.createElement('script');
@@ -57,3 +63,52 @@ _gaq.push(['_trackPageview']);
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(ga, s);
 })();
+
+$(function(){
+    var dateRegExp = /(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), {0,1}(January|February|March|April|May|June|July|August|September|October|November|December) \d{1,2}, {0,1}\d{4}/
+
+    $("#policiesCheckBox").change(function(){
+      $("#requestTable").toggle()
+    });
+
+    $("#field-321809a2e8bce35").attr("readonly", "readonly");
+
+    $("#field-1d28e38940b442e, #field-868ca07448b9bc4").datepicker({
+        showOn: "button",
+        buttonImage: "images/calendar.gif",
+        buttonImageOnly: true,
+        dateFormat: 'DD, MM dd, yy'
+    });
+
+    $("form :submit").click(function(event){
+        event.preventDefault();
+        if(dateRegExp.test($("#field-1d28e38940b442e").val()) && dateRegExp.test($("#field-868ca07448b9bc4").val())) {
+            $(this).parents("form").submit();
+        }
+        else {
+            alert("Dates format is wrong!\nExample: Tuesday, January 31, 2012 ");
+        }
+    });
+
+    $("#field-1d28e38940b442e, #field-868ca07448b9bc4").change(function() {
+        if (document.getElementById('field-1d28e38940b442e').value != '' && document.getElementById('field-868ca07448b9bc4').value != '') {
+            var arrDate = new Date(document.getElementById('field-1d28e38940b442e').value);
+            var depDate = new Date(document.getElementById('field-868ca07448b9bc4').value);
+            var days = Math.round((depDate - arrDate) / 86400000);
+            if (days > 0) {
+                if (days < 15) {
+                    document.getElementById('field-321809a2e8bce35').value = days;
+                }
+                else {
+                    alert('Maximum number of days is 14!');
+                    document.getElementById('field-321809a2e8bce35').value = '';
+                }
+            }
+            else {
+                alert('Check your days!');
+                document.getElementById('field-321809a2e8bce35').value = '';
+            }
+
+        }
+    });
+});
