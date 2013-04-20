@@ -1,4 +1,14 @@
 @charset "utf-8";
+
+.trip-bottom {
+  background-image: url('../images/trip_bot_3.gif');
+  background-repeat: no-repeat;
+}
+
+.trup-bottom a {
+  text-decoration: none !important;
+}
+
 .bodytext {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 9pt;
