@@ -32,6 +32,7 @@
 <td><img alt="" width="30" height="61" src="images/top_right_corner.gif" /></td></tr></tbody></table></td></tr>
 <tr>
 <td>
+
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
 <tbody>
 <tr>
@@ -39,7 +40,9 @@
 <td><a target="_blank" href="http://www.doowopusa.org"><img border="0" alt="Certified Doo Wop Property" width="290" height="117" src="images/top_doowop.gif" /></a></td>
 <td><a href="index.html"><img border="0" alt="Monaco Motel, Wildwood NJ" width="310" height="117" src="images/top_logo.gif" /></a></td>
 <td><img alt="4211 Ocean Ave, Wildwood, NJ 08260, 609-522-2269" width="300" height="117" src="images/top_address.gif" /></td>
-<td width="30"><img alt="" width="30" height="117" src="images/top_right.gif" /></td></tr></tbody></table></td></tr>
+<td width="30"><img alt="" width="30" height="117" src="images/top_right.gif" /></td></tr></tbody></table>
+
+</td></tr>
 <tr>
 <td>
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -51,24 +54,8 @@
 <tbody>
 <tr>
 <td width="290">
-<table border="0" cellspacing="0" cellpadding="0" width="100%">
-<tbody>
-<tr>
-<td><a href="aboutus.html" onMOUSEOVER="MM_swapImage('Image16','','images/nav/about_over.gif',1)" onMOUSEOUT="MM_swapImgRestore()"><img border="0" name="Image16" alt="About the Monaco Motel, WIldwood, NJ" width="290" height="30" src="images/nav/about.gif" /></a></td></tr>
-<tr>
-<td><a href="rates.html" onMOUSEOVER="MM_swapImage('Image17','','images/nav/rooms_over.gif',1)" onMOUSEOUT="MM_swapImgRestore()"><img border="0" name="Image17" alt="Room Rates at the Monaco Motel in Wildwood, NJ" width="290" height="31" src="images/nav/rooms.gif" /></a></td></tr>
-<tr>
-<td><a href="photo.html" onMOUSEOVER="MM_swapImage('Image35','','images/nav/photo_over.gif',1)" onMOUSEOUT="MM_swapImgRestore()"><img border="0" name="Image35" alt="Photo gallery at the Monaco Motel in Wildwood, NJ" width="290" height="31" src="images/nav/photo.gif" /></a></td></tr>
-<tr>
-<td><a href="amenities.html" onMOUSEOVER="MM_swapImage('Image18','','images/nav/amenities_over.gif',1)" onMOUSEOUT="MM_swapImgRestore()"><img border="0" name="Image18" alt="Amenities at the Monaco Motel in Wildwood, NJ" width="290" height="31" src="images/nav/amenities.gif" /></a></td></tr>
-<tr>
-<td><a href="specials.html" onMOUSEOVER="MM_swapImage('Image19','','images/nav/specials_over.gif',1)" onMOUSEOUT="MM_swapImgRestore()"><img border="0" name="Image19" alt="Specials at the Monaco Motel in Wildwood, NJ" width="290" height="31" src="images/nav/specials.gif" /></a></td></tr>
-<tr>
-<td><a href="attractions.html" onMOUSEOVER="MM_swapImage('Image20','','images/nav/attractions_over.gif',1)" onMOUSEOUT="MM_swapImgRestore()"><img border="0" name="Image20" alt="Wildwood NJ Attractions" width="290" height="31" src="images/nav/attractions.gif" /></a></td></tr>
-<tr>
-<td><a href="directions.html" onMOUSEOVER="MM_swapImage('Image21','','images/nav/location_over.gif',1)" onMOUSEOUT="MM_swapImgRestore()"><img border="0" name="Image21" alt="Directions to the Monaco Motel in Wildwood, NJ" width="290" height="31" src="images/nav/location.gif" /></a></td></tr>
-<tr>
-<td><a href="reservations.html" onMOUSEOVER="MM_swapImage('Image22','','images/nav/reservations_over.gif',1)" onMOUSEOUT="MM_swapImgRestore()"><img border="0" name="Image22" alt="Make a Reservation at the Monaco Motel in Wildwood, NJ" width="290" height="31" src="images/nav/reservations.gif" /></a></td></tr></tbody></table></td>
+  <%= partial 'navigation' %>
+</td>
 <td>
 <div id="slide-container">
 <div id="slideshow"><!-- to change pictures--><img alt="" src="images/flash/monaco1.jpg" /><img alt="" src="images/flash/convcenter1.jpg" /><img alt="" src="images/flash/monaconeon.jpg" /><img alt="" src="images/flash/room1.jpg" /><img alt="" src="images/flash/beach1.jpg" /><img alt="" src="images/flash/deck1.jpg" /><img alt="" src="images/flash/mm_ne_610.jpg" /><img alt="" src="images/flash/sign.jpg" /><!-- to change pictures--></div></div></td></tr></tbody></table></td>
@@ -201,6 +188,8 @@
 <td><img alt="" width="30" height="26" src="images/bottom_left_corner.gif" /></td>
 <td colspan="3"><img alt="" width="900" height="26" src="images/bottom_line.gif" /></td>
 <td><img alt="" width="30" height="26" src="images/bottom_right_corner.gif" /></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>
+
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 <%= javascript_include_tag  "all" %>
 </body>
 </html>

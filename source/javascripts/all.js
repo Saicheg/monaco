@@ -33,6 +33,7 @@ function animate(tagId, alfa, step) {
         <!-- to change seconds -->
     }
 }
+
 function slideSwitch(tagId, speed) {
     div = document.getElementById('slideshow');
     if(div != null) {
@@ -51,10 +52,6 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-18924105-1']);
 _gaq.push(['_trackPageview']);
 
-$(function(){
-  $('#gallery a').lightBox();
-}());
-
 (function () {
     var ga = document.createElement('script');
     ga.type = 'text/javascript';
@@ -65,6 +62,25 @@ $(function(){
 })();
 
 $(function(){
+
+    $('#gallery a').lightBox();
+
+    $('.navigation.a').each(function(){
+      var path = 'images/nav/' + $(this).attr('data-bgimage-name') + '_over.gif';
+      console.log(path);
+      $('<img />').attr('src', path).appendTo('body').css('display','none');
+    });
+
+    $('.navigation a').on('mouseover', function(){
+      var that = $(this);
+      that.find('img').attr('src', 'images/nav/' + that.attr('data-bgimage-name') + '_over.gif');
+    });
+
+    $('.navigation a').on('mouseout', function(){
+      var that = $(this);
+      that.find('img').attr('src', 'images/nav/' + that.attr('data-bgimage-name') + '.gif');
+    });
+
     var dateRegExp = /(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), {0,1}(January|February|March|April|May|June|July|August|September|October|November|December) \d{1,2}, {0,1}\d{4}/
 
     $("#policiesCheckBox").change(function(){
