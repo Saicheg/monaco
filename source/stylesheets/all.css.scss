@@ -161,7 +161,12 @@
 }
 
 .check-availability {
-  margin-top: 10px;
+  margin-top: 25px;
+  h1 {
+    color: #9900ff;
+    font-size: 24px;
+    text-align: center;
+  }
   .control-label {
     font-size: 18px;
   }
