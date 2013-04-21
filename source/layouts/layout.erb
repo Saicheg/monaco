@@ -12,6 +12,8 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <%= stylesheet_link_tag "all", "jquery-ui-1.8.11.custom", "jquery.lightbox-0.5" %>
+
+    <%= yield_content(:head) %>
   </head>
 
 <body background="images/bg_dia1.gif" topmargin="0" bgcolor="#d582f7" link="#0078ff" marginheight="0">
@@ -139,5 +141,6 @@
 <td><img alt="" src="images/bottom_right_corner.gif" width="30" height="26" _wpro_SRC="images/bottom_right_corner.gif" /></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>
      <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
      <%= javascript_include_tag  "all" %>
+     <%= yield_content(:javascript) %>
 </body>
 </html>

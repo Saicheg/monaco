@@ -1,4 +1,5 @@
-//= require_tree .
+//= require jquery-ui-1.8.11.custom.min
+//= require jquery.lightbox-0.5.min
 
 function animate(tagId, alfa, step) {
     div = document.getElementById(tagId);
@@ -96,7 +97,7 @@ $(function(){
         dateFormat: 'DD, MM dd, yy'
     });
 
-    $("form :submit").click(function(event){
+    $("form.reservation input[type='submit']").click(function(event){
         event.preventDefault();
         if(dateRegExp.test($("#field-1d28e38940b442e").val()) && dateRegExp.test($("#field-868ca07448b9bc4").val())) {
             $(this).parents("form").submit();
